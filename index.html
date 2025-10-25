@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Festava Live - Bootstrap 5 CSS Template</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+                
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-festava-live.css" rel="stylesheet">
+        
+        <style>
+            /* Custom styles for carousel controls */
+            #periodCarousel {
+                position: relative;
+                padding: 0 80px;
+            }
+            
+            #periodCarousel .carousel-control-prev,
+            #periodCarousel .carousel-control-next {
+                width: 60px;
+                height: 60px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #dc3545;
+                border-radius: 50%;
+                opacity: 0.9;
+                border: none;
+            }
+            
+            #periodCarousel .carousel-control-prev {
+                left: -80px;
+            }
+            
+            #periodCarousel .carousel-control-next {
+                right: -80px;
+            }
+            
+            #periodCarousel .carousel-control-prev:hover,
+            #periodCarousel .carousel-control-next:hover {
+                opacity: 1;
+                background-color: #c82333;
+            }
+            
+            #periodCarousel .carousel-control-prev-icon,
+            #periodCarousel .carousel-control-next-icon {
+                filter: brightness(0) saturate(100%) invert(98%) sepia(96%) saturate(2485%) hue-rotate(347deg) brightness(104%) contrast(106%);
+                width: 30px;
+                height: 30px;
+            }
+            
+            #periodCarousel .carousel-indicators {
+                bottom: -50px;
+            }
+            
+            #periodCarousel .carousel-indicators button {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: #c82333;
+                opacity: 0.5;
+            }
+            
+            #periodCarousel .carousel-indicators button.active {
+                opacity: 1;
+                background-color: #c82333;
+            }
+            
+            /* Styles for second carousel - 1945-1969 */
+            #periodCarousel2 {
+                position: relative;
+                padding: 0 80px;
+            }
+            
+            #periodCarousel2 .carousel-control-prev,
+            #periodCarousel2 .carousel-control-next {
+                width: 60px;
+                height: 60px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #dc3545;
+                border-radius: 50%;
+                opacity: 0.9;
+                border: none;
+            }
+            
+            #periodCarousel2 .carousel-control-prev {
+                left: -80px;
+            }
+            
+            #periodCarousel2 .carousel-control-next {
+                right: -80px;
+            }
+            
+            #periodCarousel2 .carousel-control-prev:hover,
+            #periodCarousel2 .carousel-control-next:hover {
+                opacity: 1;
+                background-color: #c82333;
+            }
+            
+            #periodCarousel2 .carousel-control-prev-icon,
+            #periodCarousel2 .carousel-control-next-icon {
+                filter: brightness(0) saturate(100%) invert(98%) sepia(96%) saturate(2485%) hue-rotate(347deg) brightness(104%) contrast(106%);
+                width: 30px;
+                height: 30px;
+            }
+            
+            #periodCarousel2 .carousel-indicators {
+                bottom: -50px;
+            }
+            
+            #periodCarousel2 .carousel-indicators button {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: #c82333;
+                opacity: 0.5;
+            }
+            
+            #periodCarousel2 .carousel-indicators button.active {
+                opacity: 1;
+                background-color: #c82333;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+
+        <main>
+
+            <header class="site-header">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-12 col-12 d-flex flex-wrap">
+                            <p class="d-flex me-4 mb-0">
+                                <i class="bi-person custom-icon me-2"></i>
+                                <strong class="text-dark">Cuộc đời chủ tịch Hồ Chí Minh</strong>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        Cuộc đời chủ tịch Hồ Chí Minh
+                    </a>
+
+                    <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">About</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Artists</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_4">Schedule</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_5">Pricing</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_6">Contact</a>
+                            </li>
+                        </ul>
+
+                        <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Buy Ticket</a>
+                    </div>
+                </div>
+            </nav>
+            
+
+            <section class="hero-section" id="section_1">
+                <div class="section-overlay"></div>
+
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div class="row">
+
+                        <div class="col-12 mt-auto mb-5 text-center">
+                            <small>Chủ tịch</small>
+
+                            <h1 class="text-white mb-5">Hồ Chí Minh</h1>
+
+                            <a class="btn custom-btn smoothscroll" href="#section_2">Bắt đầu</a>
+                        </div>
+
+                        <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
+                            <div class="date-wrap">
+                                <h5 class="text-white">
+                                    <i class="custom-icon bi-clock me-2"></i>
+                                    1890 - 1969
+                                </h5>
+                            </div>
+
+                            <div class="location-wrap mx-auto py-3 py-lg-0">
+                                <h5 class="text-white">
+                                    <i class="custom-icon bi-geo-alt me-2"></i>
+                                    Viet Nam
+                                </h5>
+                            </div>
+
+                            <div class="social-share">
+                                <ul class="social-icon d-flex align-items-center justify-content-center">
+                                    <span class="text-white me-3">Share:</span>
+
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link">
+                                            <span class="bi-facebook"></span>
+                                        </a>
+                                    </li>
+
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link">
+                                            <span class="bi-twitter"></span>
+                                        </a>
+                                    </li>
+
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link">
+                                            <span class="bi-instagram"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-wrap">
+                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                        <source src="video/pexels-2022395.mp4" type="video/mp4">
+
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+
+
+            <section class="about-section section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                            <div class="services-info">
+                                <h2 class="text-white mb-4">Giai đoạn từ năm 1890 đến năm 1911</h2>
+
+                                <p class="text-white">Giai đoạn từ năm 1890 đến 1911 là thời kỳ hình thành nhân cách và tư tưởng yêu nước của Chủ tịch Hồ Chí Minh. Người sinh ra trong một gia đình nhà Nho yêu nước tại làng Hoàng Trù, Nam Đàn, Nghệ An, sớm hấp thụ tinh thần yêu nước, nhân ái từ gia đình và quê hương.</p>
+
+                                <h6 class="text-white mt-4">Tiếp xúc với văn hóa và thực tế xã hội</h6>
+
+                                <p class="text-white">Trong 10 năm sống ở Huế, Người được tiếp xúc với văn hóa Pháp và chứng kiến cảnh áp bức của thực dân, sự nghèo khổ của nhân dân, cùng những thất bại của các phong trào yêu nước đương thời. Từ đó, Người nhận ra cần phải tìm một con đường cách mạng mới để cứu nước.</p>
+
+                                <h6 class="text-white mt-4">Quyết tâm ra đi tìm đường cứu nước</h6>
+
+                                <p class="text-white">Với ý chí và hoài bão lớn, Người quyết tâm ra nước ngoài "xem nước Pháp và các nước khác làm như thế nào" để tìm cách giải phóng dân tộc.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="about-text-wrap">
+                                <img src="images/pexels-alexander-suhorucov-6457579.jpg" class="about-image img-fluid">
+
+                                <div class="about-text-info d-flex">
+                                    <div class="d-flex">
+                                        <i class="about-text-icon bi-person"></i>
+                                    </div>
+
+
+                                    <div class="ms-4">
+                                        <h3>a happy moment</h3>
+
+                                        <p class="mb-0">your amazing festival experience with us</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+<section class="artists-section section-padding" id="section_3" style="background-image: url('images/nicholas-green-unsplash-blur.jpg'); background-size: cover; background-position: center; position: relative;">
+                <div class="section-overlay"></div>
+                <div class="container" style="position: relative; z-index: 1;">
+                    <div class="row justify-content-center">
+
+                        <div class="col-12 text-center">
+                            <h2 class="mb-4" style="color: white;">Giai đoạn từ năm 1911 đến năm 1920</h1>
+                        </div>
+
+                        <div class="col-lg-10 col-12">
+                            <div class="">
+                                <p class="lead" style="color: white;">Từ năm 1911 đến 1920, hành trình tìm đường cứu nước của Nguyễn Ái Quốc trải qua nhiều bước quan trọng. Ngày 05/06/1911, Người rời Tổ quốc từ Bến cảng Nhà Rồng ra đi tìm hiểu lý tưởng "Tự do, Bình đẳng, Bác ái" của Pháp, nhưng sau khi đi qua nhiều châu lục, Người nhận ra rằng ở đâu chủ nghĩa thực dân cũng tàn bạo và nhân dân lao động các nước đều có chung kẻ thù.</p>
+
+                                <p class="lead mt-4" style="color: white;">Năm 1919, với tên Nguyễn Ái Quốc, Người gửi "Bản yêu sách của nhân dân An Nam" tới Hội nghị Vécxây, đòi quyền tự do dân chủ cho dân tộc Việt Nam và khẳng định rằng chỉ có thể tự mình đấu tranh mới giành được độc lập. Đến tháng 7 năm 1920, sau khi đọc "Sơ thảo Luận cương về vấn đề dân tộc và thuộc địa" của Lênin, Người đã tìm ra con đường cách mạng vô sản – con đường đúng đắn để giải phóng dân tộc, đánh dấu bước ngoặt từ một người yêu nước trở thành người cộng sản Việt Nam đầu tiên.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            
+
+
+            <section class="schedule-section section-padding" id="section_4" style="background-image: url('images/edward-unsplash-blur.jpg'); background-size: cover; background-position: center; position: relative;">
+                <div class="section-overlay"></div>
+                <div class="container" style="position: relative; z-index: 1;">
+                    <div class="row">
+
+                        <div class="col-12 text-center">
+                            <h2 class="text-white mb-4">Giai đoạn từ năm 1920 đến năm 1930</h1>
+                        </div>
+
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <p class="lead text-white">Trong thập niên 1920, Nguyễn Ái Quốc cùng các nhà cách mạng thuộc địa lập Hội Liên hiệp các dân tộc thuộc địa và ra báo Người cùng khổ (1922) để tố cáo ách thực dân và kêu gọi Quốc tế Cộng sản ủng hộ phong trào giải phóng. Năm 1925, Người viết Bản án chế độ thực dân Pháp; tại Quảng Châu, thành lập Việt Nam Thanh niên Cách mạng Đồng chí Hội, mở lớp huấn luyện, ra báo Thanh niên và biên soạn Đường Cách mệnh (1927), trực tiếp truyền bá chủ nghĩa Mác–Lênin, gây dựng đội ngũ cán bộ, khơi dậy tinh thần dân tộc và tổ chức lực lượng chính trị – vũ trang cho cao trào cứu nước.</p>
+
+                            <p class="lead text-white mt-4">Từ thực tiễn đó, Người khẳng định lực lượng công – nông muốn thắng lợi phải có Đảng lãnh đạo, lấy chủ nghĩa Mác–Lênin làm nòng cốt. Năm 1930, Người chủ trì hợp nhất ba tổ chức cộng sản, thành lập Đảng Cộng sản Việt Nam và soạn Chính cương, Sách lược, Điều lệ vắn tắt – Cương lĩnh chính trị đầu tiên. Sự ra đời của Đảng chấm dứt khủng hoảng đường lối và tổ chức, mở ra thời kỳ mới lãnh đạo nhân dân đấu tranh giành độc lập, tự do, góp phần vào sự nghiệp giải phóng dân tộc và chống bất công trên phạm vi rộng lớn.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="pricing-section section-padding section-bg" id="section_5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="mb-5">Giai đoạn từ năm 1930 đến năm 1945</h2>
+                        </div>
+
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <div id="periodCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#periodCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#periodCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#periodCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#periodCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card border-0 shadow-lg">
+                                            <div class="card-body p-5">
+                                                <h3 class="mb-4">1. Giai đoạn 1930 – 1931: Thành lập Đảng Cộng sản Việt Nam</h3>
+                                                <p class="lead">Ngày 3/2/1930, tại Cửu Long (Hồng Kông), Nguyễn Ái Quốc chủ trì Hội nghị hợp nhất ba tổ chức cộng sản ở Việt Nam, thành lập Đảng Cộng sản Việt Nam. Người soạn thảo Chính cương, Sách lược vắn tắt, xác định con đường giải phóng dân tộc gắn liền với cách mạng vô sản. Sự kiện này đánh dấu bước ngoặt lịch sử, đưa cách mạng Việt Nam bước vào thời kỳ mới có đường lối, tổ chức và lãnh đạo thống nhất. Cuối năm 1931, Nguyễn Ái Quốc bị bắt tại Hồng Kông, nhưng phong trào cách mạng trong nước vẫn tiếp tục phát triển mạnh mẽ.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="card border-0 shadow-lg">
+                                            <div class="card-body p-5">
+                                                <h3 class="mb-4">2. Giai đoạn 1932 – 1938: Kiên trì hoạt động và khôi phục phong trào</h3>
+                                                <p class="lead">Trong thời gian bị giam giữ và sau khi được trả tự do (1933), Người tiếp tục hoạt động ở nước ngoài, giữ vững niềm tin vào con đường cách mạng. Nguyễn Ái Quốc tham gia phong trào quốc tế, viết báo, truyền bá tư tưởng cách mạng, đồng thời theo dõi sát tình hình trong nước. Từ năm 1936, phong trào dân chủ ở Việt Nam phát triển mạnh dưới tác động của Mặt trận Dân chủ Đông Dương — đây là thời kỳ Đảng vận động công khai, mở rộng ảnh hưởng trong quần chúng. Dù chưa thể trực tiếp chỉ đạo trong nước, Người vẫn là ngọn đuốc tư tưởng dẫn đường cho cách mạng Việt Nam.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="card border-0 shadow-lg">
+                                            <div class="card-body p-5">
+                                                <h3 class="mb-4">3. Giai đoạn 1939 – 1941: Chuẩn bị trở về Tổ quốc</h3>
+                                                <p class="lead">Khi Chiến tranh thế giới thứ hai bùng nổ (1939), phong trào cách mạng gặp nhiều khó khăn. Năm 1940, Pháp đầu hàng phát xít Nhật, Việt Nam trở thành thuộc địa của hai tầng áp bức Pháp – Nhật. Tháng 1/1941, sau hơn 30 năm bôn ba, Nguyễn Ái Quốc trở về Tổ quốc qua mốc Pác Bó (Cao Bằng). Người trực tiếp lãnh đạo phong trào, xây dựng căn cứ cách mạng, biên soạn tài liệu như Lịch sử nước ta, Ca dao cách mạng, và đặt nền móng cho Mặt trận Việt Minh (Việt Nam độc lập đồng minh).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="card border-0 shadow-lg">
+                                            <div class="card-body p-5">
+                                                <h3 class="mb-4">4. Giai đoạn 1942 – 1945: Lãnh đạo khởi nghĩa giành chính quyền</h3>
+                                                <p class="lead">Từ năm 1942, Hồ Chí Minh sang Trung Quốc liên lạc với đồng minh chống phát xít, nhưng bị chính quyền Tưởng Giới Thạch bắt giam hơn 1 năm. Trong tù, Người viết "Nhật ký trong tù", thể hiện tinh thần thép và tâm hồn lạc quan yêu nước. Cuối năm 1944, Người chỉ đạo thành lập Đội Việt Nam Tuyên truyền Giải phóng quân — tiền thân của Quân đội Nhân dân Việt Nam. Đến tháng 8/1945, trước thời cơ lịch sử khi Nhật đầu hàng Đồng minh, Hồ Chí Minh và Đảng Cộng sản lãnh đạo toàn dân Tổng khởi nghĩa giành chính quyền trong cả nước. Ngày 2/9/1945, tại Quảng trường Ba Đình, Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa — mở ra kỷ nguyên mới cho dân tộc Việt Nam.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#periodCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#periodCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-padding" id="section_5b" style="background-color: #f8f9fa;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="mb-5">Giai đoạn từ năm 1945 đến năm 1969</h2>
+                        </div>
+
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <div id="periodCarousel2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#periodCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#periodCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#periodCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#periodCarousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#periodCarousel2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                </div>
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card border-0 shadow-lg">
+                                            <div class="card-body p-5">
+                                                <p class="lead">Sau Cách mạng tháng Tám 1945, Việt Nam đứng trước tình thế "ngàn cân treo sợi tóc": Pháp tái xâm lược Nam Bộ và hơn 20 vạn quân Tưởng kéo vào miền Bắc.</p>
+                                                <p class="lead mt-3">Chủ tịch Hồ Chí Minh và Trung ương Đảng đã chèo lái con thuyền cách mạng bằng cách lãnh đạo kháng chiến ở Nam Bộ, đồng thời củng cố chính quyền non trẻ (chống "giặc đói, giặc dốt"). Thực hiện sách lược đối ngoại "dĩ bất biến, ứng vạn biến" để tranh thủ thời gian, giữ vững chính quyền và chuẩn bị lực lượng.</p>
+                                                <p class="lead mt-3">Ngày 19/12/1946, trước sự xâm lược của Pháp, Người ra "Lời kêu gọi Toàn quốc kháng chiến" với quyết tâm sắt đá: "Chúng ta thà hy sinh tất cả, chứ nhất định không chịu mất nước, nhất định không chịu làm nô lệ". Người đề ra đường lối kháng chiến lâu dài, toàn dân, toàn diện, tự lực cánh sinh, lãnh đạo toàn dân chiến đấu bảo vệ Tổ quốc.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="card border-0 shadow-lg">
+                                            <div class="card-body p-5">
+                                                <p class="lead">Năm 1951, Chủ tịch Hồ Chí Minh và Trung ương Đảng triệu tập Đại hội đại biểu toàn quốc lần thứ II. Đảng được đưa ra công khai với tên gọi Đảng Lao động Việt Nam, và Người được bầu làm Chủ tịch.</p>
+                                                <p class="lead mt-3">Đại hội đã thông qua Cương lĩnh và Điều lệ mới, xác định nhiệm vụ trọng tâm là "đẩy kháng chiến đến thắng lợi hoàn toàn". Đường lối đúng đắn này đã động viên toàn dân tộc.</p>
+                                                <p class="lead mt-3">Trong giai đoạn này, Người không ngừng chỉ đạo, động viên chiến sĩ, truyền ý chí quyết chiến quyết thắng trên các mặt trận. Trong Thư gửi Mặt trận Điện Biên Phủ, Người đã viết: "Thu Đông năm nay, các chú lại có nhiệm vụ tiến quân vào Điện Biên Phủ để tiêu diệt thêm sinh lực địch, mở rộng thêm căn cứ kháng chiến, giải phóng thêm đồng bào còn bị giặc đè nén".</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="card border-0 shadow-lg">
+                                            <div class="card-body p-5">
+                                                <p class="lead">Chủ trương đúng đắn của Đảng, dưới sự lãnh đạo của Chủ tịch Hồ Chí Minh, đã tạo động lực to lớn đưa đến thắng lợi Điện Biên Phủ lịch sử vào tháng 5 năm 1954 - một chiến thắng "lừng lẫy năm châu, chấn động địa cầu". Chiến thắng này buộc Pháp phải ký kết Hiệp định Giơnevơ vào tháng 7 năm 1954.</p>
+                                                <p class="lead mt-3">Hiệp định được ký kết đã giải phóng hoàn toàn được miền Bắc và tiến hành xây dựng xã hội chủ nghĩa. Tuy nhiên, theo Hiệp định, đất nước tạm thời bị chia cắt ở vĩ tuyến 17, và miền Nam vẫn bị đế quốc Mỹ xâm lược và thay thế Pháp, gây nên sự chia cắt lâu dài.</p>
+                                                <p class="lead mt-3">Sau năm 1954, Chủ tịch Hồ Chí Minh cùng Trung ương Đảng lãnh đạo nhân dân cả nước đồng thời thực hiện hai nhiệm vụ chiến lược: tiến hành cách mạng xã hội chủ nghĩa ở miền Bắc, làm hậu phương lớn để tiến hành cách mạng dân tộc dân chủ nhân dân ở miền Nam nhằm thống nhất đất nước.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="card border-0 shadow-lg">
+                                            <div class="card-body p-5">
+                                                <p class="lead">Năm 1960, tại Đại hội III của Đảng, Chủ tịch Hồ Chí Minh được bầu làm Chủ tịch Ban Chấp hành Trung ương Đảng và đề ra hai nhiệm vụ chiến lược: "Xây dựng chủ nghĩa xã hội ở miền Bắc và đấu tranh hòa bình thống nhất nước nhà". Người xác định miền Bắc là hậu phương lớn và có vai trò quyết định đối với cách mạng cả nước.</p>
+                                                <p class="lead mt-3">Để thực hiện nhiệm vụ xây dựng chủ nghĩa xã hội và chi viện cho miền Nam, Người nhấn mạnh phải có "người xã hội chủ nghĩa" – những con người mới "vừa hồng vừa chuyên", có đạo đức và tri thức, có ý thức làm chủ.</p>
+                                                <p class="lead mt-3">Với vai trò lãnh đạo, Người đã dẫn dắt nhân dân miền Bắc vừa sản xuất, vừa chiến đấu, đồng thời kiên định khẳng định: "Nước Việt Nam ta nhất định phải thống nhất. Đồng bào Nam và Bắc nhất định sẽ sum họp một nhà", kêu gọi toàn thể đồng bào quyết tâm cho cuộc đấu tranh lâu dài, gian khổ.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="card border-0 shadow-lg">
+                                            <div class="card-body p-5">
+                                                <p class="lead">Năm 1965, trước việc Mỹ leo thang chiến tranh sang chiến lược "chiến tranh cục bộ" và đẩy mạnh đánh phá miền Bắc, Chủ tịch Hồ Chí Minh đã thể hiện tinh thần kiên quyết kháng chiến đến cùng. Người khẳng định: "dù phải chiến đấu 5 năm, 10 năm, 20 năm hoặc lâu hơn nữa, chúng ta cũng kiên quyết chiến đấu đến thắng lợi hoàn toàn".</p>
+                                                <p class="lead mt-3">Trong Lời kêu gọi đồng bào và chiến sĩ cả nước, Người đưa ra lời hiệu triệu bất hủ: "Không có gì quý hơn độc lập, tự do", khẳng định tinh thần không sợ hy sinh, tàn phá và niềm tin sắt đá vào tương lai: "Đến ngày thắng lợi, nhân dân ta sẽ xây dựng lại đất nước ta đàng hoàng hơn, to đẹp hơn!".</p>
+                                                <p class="lead mt-3">Lời hiệu triệu này đã khơi dậy chủ nghĩa anh hùng cách mạng, thúc đẩy toàn dân đoàn kết, chiến đấu và giành thắng lợi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#periodCarousel2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#periodCarousel2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="about-section section-padding" id="section_6">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                            <div class="services-info">
+                                <h2 class="text-white mb-4">Di chúc của Chủ tịch Hồ Chí Minh</h2>
+
+                                <p class="text-white">Ngày 02/09/1969, Chủ tịch Hồ Chí Minh qua đời, để lại cho nhân dân Việt Nam bản Di chúc thiêng liêng. Bản Di chúc này là lời căn dặn tâm huyết, thể hiện tình sâu nghĩa nặng của Người với nước, với dân, cùng niềm tin tất thắng vào sự nghiệp thống nhất đất nước.</p>
+
+                                <h6 class="text-white mt-4">Tầm nhìn về tương lai đất nước</h6>
+
+                                <p class="text-white">Người đề ra những phương sách lớn nhằm xây dựng một nước Việt Nam "hoà bình, thống nhất, độc lập, dân chủ và giàu mạnh".</p>
+
+                                <h6 class="text-white mt-4">Giá trị vĩnh hằng</h6>
+
+                                <p class="text-white">Di chúc là một văn kiện lịch sử vô giá, kết tinh tinh hoa tư tưởng, đạo đức và tâm hồn cao đẹp của Người đã suốt đời cống hiến vì Tổ quốc và nhân loại.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="about-text-wrap">
+                                <img src="images/pexels-alexander-suhorucov-6457579.jpg" class="about-image img-fluid">
+
+                                <div class="about-text-info d-flex">
+                                    <div class="d-flex">
+                                        <i class="about-text-icon bi-book"></i>
+                                    </div>
+
+
+                                    <div class="ms-4">
+                                        <h3>Di chúc thiêng liêng</h3>
+
+                                        <p class="mb-0">Tinh hoa tư tưởng và tâm hồn cao đẹp</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="about-section section-padding" id="section_7">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                            <div class="services-info">
+                                <h2 class="text-white mb-4">Kết luận</h2>
+
+                                <p class="text-white">Cuộc đời Chủ tịch Hồ Chí Minh là bản anh hùng ca vĩ đại về lòng yêu nước, mở ra Thời đại độc lập dân tộc gắn liền với chủ nghĩa xã hội cho Việt Nam. Từ lời hiệu triệu bất hủ "Không có gì quý hơn độc lập, tự do" đến bản Di chúc thiêng liêng, Người đã để lại tư tưởng, đạo đức, phong cách cao đẹp, là nền tảng tinh thần vững chắc của dân tộc.</p>
+
+                                <h6 class="text-white mt-4">Bài học cho thế hệ trẻ</h6>
+
+                                <p class="text-white">Noi gương Người, bài học thiết thực nhất cho mỗi chúng ta là phải ra sức rèn luyện đạo đức, nâng cao tri thức để trở thành những "người xã hội chủ nghĩa" vừa "hồng" vừa "chuyên".</p>
+
+                                <h6 class="text-white mt-4">Tâm nguyện của Bác</h6>
+
+                                <p class="text-white">Đồng thời hết lòng phụng sự Tổ quốc, phụng sự nhân dân với tinh thần trách nhiệm cao nhất, góp phần xây dựng đất nước Việt Nam "đàng hoàng hơn, to đẹp hơn" như tâm nguyện cuối cùng của Bác.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+        <footer class="site-footer">
+            <div class="site-footer-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <h2 class="text-white mb-lg-0">Nhóm 4</h2>
+                        </div>
+
+                        <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                            <ul class="social-icon d-flex justify-content-lg-end">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-twitter"></span>
+                                    </a>
+                                </li>
+    
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-apple"></span>
+                                    </a>
+                                </li>
+    
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-instagram"></span>
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-youtube"></span>
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-pinterest"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-4 pb-2">
+                        <h5 class="site-footer-title mb-3">Links</h5>
+
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Home</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">About</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Artists</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Schedule</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Pricing</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                        <h5 class="site-footer-title mb-3">Have a question?</h5>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="tel: 090-080-0760" class="site-footer-link">
+                                090-080-0760
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <a href="mailto:hello@company.com" class="site-footer-link">
+                                hello@company.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                        <h5 class="site-footer-title mb-3">Location</h5>
+
+                        <p class="text-white d-flex mt-3 mb-2">
+                        Silang Junction South, Tagaytay, Cavite, Philippines</p>
+
+                        <a class="link-fx-1 color-contrast-higher mt-3" href="#">
+                            <span>Our Maps</span>
+                            <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="15.5"></circle><line x1="10" y1="18" x2="16" y2="12"></line><line x1="16" y1="12" x2="22" y2="18"></line></g></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-12 mt-5">
+                            <p class="copyright-text">Copyright © 2036 Festava Live Company</p>
+                        </div>
+
+                        <div class="col-lg-8 col-12 mt-lg-5">
+                            <ul class="site-footer-links">
+                                <li class="site-footer-link-item">
+                                    <a href="#" class="site-footer-link">Terms &amp; Conditions</a>
+                                </li>
+
+                                <li class="site-footer-link-item">
+                                    <a href="#" class="site-footer-link">Privacy Policy</a>
+                                </li>
+
+                                <li class="site-footer-link-item">
+                                    <a href="#" class="site-footer-link">Your Feedback</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+<!--
+
+T e m p l a t e M o
+
+-->
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
