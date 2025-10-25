@@ -1,0 +1,583 @@
+/* Custom fonts */
+@font-face {
+  font-family: "ChocolateClassicalSans-Regular";
+  src: url("../fonts/ChocolateClassicalSans-Regular.ttf") format("truetype"),
+    url("../fonts/ChocolateClassicalSans-Regular.woff") format("woff"),
+    url("../fonts/ChocolateClassicalSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("../fonts/Newsreader/Newsreader-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Italianno-Regular";
+  src: url("../fonts/Italianno-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Custom styles for carousel controls - First carousel (1930-1945) */
+#periodCarousel {
+  position: relative;
+  padding: 0 80px;
+}
+
+#periodCarousel .carousel-control-prev,
+#periodCarousel .carousel-control-next {
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #dc3545;
+  border-radius: 50%;
+  opacity: 0.9;
+  border: none;
+}
+
+#periodCarousel .carousel-control-prev {
+  left: -80px;
+}
+
+#periodCarousel .carousel-control-next {
+  right: -80px;
+}
+
+#periodCarousel .carousel-control-prev:hover,
+#periodCarousel .carousel-control-next:hover {
+  opacity: 1;
+  background-color: #c82333;
+}
+
+#periodCarousel .carousel-control-prev-icon,
+#periodCarousel .carousel-control-next-icon {
+  filter: brightness(0) saturate(100%) invert(98%) sepia(96%) saturate(2485%)
+    hue-rotate(347deg) brightness(104%) contrast(106%);
+  width: 30px;
+  height: 30px;
+}
+
+#periodCarousel .carousel-indicators {
+  bottom: -25px;
+}
+
+#periodCarousel .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #c82333;
+  opacity: 0.5;
+}
+
+#periodCarousel .carousel-indicators button.active {
+  opacity: 1;
+  background-color: #c82333;
+}
+
+/* Styles for second carousel - 1945-1969 */
+#section_5b {
+  position: relative;
+}
+
+#section_5b .container {
+  margin: 0;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#periodCarousel2 {
+  position: relative;
+  padding: 0;
+}
+
+/* Smooth fade transition for carousel */
+#periodCarousel2.carousel-fade .carousel-item {
+  transition: opacity 0.6s ease-in-out;
+}
+
+#periodCarousel2.carousel-fade .carousel-item.active,
+#periodCarousel2.carousel-fade .carousel-item-next.carousel-item-start,
+#periodCarousel2.carousel-fade .carousel-item-prev.carousel-item-end {
+  opacity: 1;
+}
+
+#periodCarousel2.carousel-fade .carousel-item-next:not(.carousel-item-start),
+#periodCarousel2.carousel-fade .carousel-item-prev:not(.carousel-item-end),
+#periodCarousel2.carousel-fade .carousel-item.active.carousel-item-start,
+#periodCarousel2.carousel-fade .carousel-item.active.carousel-item-end {
+  opacity: 0;
+}
+
+/* Hide default Bootstrap carousel arrows */
+#periodCarousel2 .carousel-control-prev,
+#periodCarousel2 .carousel-control-next {
+  display: none;
+}
+
+/* Full height row for carousel */
+#section_5b .carousel-row-full-height {
+  min-height: 600px;
+  position: relative;
+}
+
+/* Carousel control columns - full height and clickable */
+.carousel-control-column {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Gradient overlay on hover */
+.carousel-control-column::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 0;
+}
+
+.carousel-control-prev-column::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.carousel-control-next-column::before {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.carousel-control-column:hover::before {
+  opacity: 1;
+}
+
+/* Custom arrow buttons in columns */
+.carousel-control-column .carousel-control-prev,
+.carousel-control-column .carousel-control-next {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  opacity: 0.7;
+  font-size: 64px;
+  color: #a0a0a0;
+  transition: all 0.3s ease;
+  position: relative;
+  transform: none;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.carousel-control-column:hover .carousel-control-prev,
+.carousel-control-column:hover .carousel-control-next {
+  opacity: 1;
+  color: #f0f0f0;
+}
+
+.carousel-control-column .carousel-control-prev::before {
+  content: "\F284";
+  font-family: "bootstrap-icons";
+}
+
+.carousel-control-column .carousel-control-next::before {
+  content: "\F285";
+  font-family: "bootstrap-icons";
+}
+
+#periodCarousel2 .carousel-indicators {
+  bottom: -60px;
+}
+
+#periodCarousel2 .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #a0a0a0;
+  opacity: 0.7;
+  margin: 0 8px;
+}
+
+#periodCarousel2 .carousel-indicators button.active {
+  opacity: 1;
+  background-color: #f0f0f0;
+}
+
+/* Make all carousel items the same height */
+#periodCarousel .carousel-inner,
+#periodCarousel2 .carousel-inner {
+  min-height: 400px;
+}
+
+#periodCarousel .carousel-item,
+#periodCarousel2 .carousel-item {
+  min-height: 400px;
+}
+
+#periodCarousel .card,
+#periodCarousel2 .card {
+  min-height: 400px;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#periodCarousel .card-body,
+#periodCarousel2 .card-body {
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image and text layout for 1945-1969 carousel */
+#periodCarousel2 .card-body {
+  display: block !important;
+}
+
+#periodCarousel2 .row {
+  height: 100%;
+}
+
+#periodCarousel2 .card-image {
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#periodCarousel2 .card-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Specific object-fit for items 1, 2, and 5 */
+#periodCarousel2 .carousel-item:nth-child(2) .card-image img,
+#periodCarousel2 .carousel-item:nth-child(5) .card-image img {
+  object-fit: contain;
+}
+
+/* First card image styling with overlay */
+#periodCarousel2 .first-card-image {
+  position: relative;
+}
+
+#periodCarousel2 .first-card-image .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: 1;
+}
+
+#periodCarousel2 .first-card-image .overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  right: 30px;
+  z-index: 2;
+  font-family: "Italianno-Regular", cursive !important;
+  font-size: 36px !important;
+  line-height: 1.4 !important;
+  color: white !important;
+  text-align: center;
+}
+
+#periodCarousel2 .first-card-image .overlay-text p {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-family: "Italianno-Regular", cursive !important;
+  font-size: 36px !important;
+  line-height: 1.4 !important;
+  color: white !important;
+}
+
+#periodCarousel2 .card-text {
+  overflow-y: auto;
+  height: 400px;
+  padding-left: 50px !important;
+  padding-right: 10px !important;
+  text-align: justify;
+}
+
+/* Apply custom font to headers */
+#section_5b h2,
+#section_5b h3 {
+  font-family: "Newsreader", serif !important;
+  font-weight: 700 !important;
+}
+
+/* Apply custom font to content (not headers) */
+#periodCarousel2 .card-text p,
+#periodCarousel2 .card-text .lead {
+  font-family: "ChocolateClassicalSans-Regular", sans-serif !important;
+}
+
+/* Modern custom scrollbar styling */
+#periodCarousel .card-body,
+#periodCarousel2 .card-text {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.3s ease;
+}
+
+/* Show scrollbar on hover or when scrolling */
+#periodCarousel .card-body:hover,
+#periodCarousel2 .card-text:hover,
+#periodCarousel .card-body:active,
+#periodCarousel2 .card-text:active,
+#periodCarousel .card-body.is-scrolling,
+#periodCarousel2 .card-text.is-scrolling {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+#periodCarousel .card-body::-webkit-scrollbar,
+#periodCarousel2 .card-text::-webkit-scrollbar {
+  width: 8px;
+}
+
+#periodCarousel .card-body::-webkit-scrollbar-track,
+#periodCarousel2 .card-text::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+#periodCarousel .card-body::-webkit-scrollbar-thumb,
+#periodCarousel2 .card-text::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+/* Show scrollbar thumb on hover or when scrolling */
+#periodCarousel .card-body:hover::-webkit-scrollbar-thumb,
+#periodCarousel2 .card-text:hover::-webkit-scrollbar-thumb,
+#periodCarousel .card-body.is-scrolling::-webkit-scrollbar-thumb,
+#periodCarousel2 .card-text.is-scrolling::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#periodCarousel .card-body:hover::-webkit-scrollbar-thumb:hover,
+#periodCarousel2 .card-text:hover::-webkit-scrollbar-thumb:hover,
+#periodCarousel .card-body.is-scrolling::-webkit-scrollbar-thumb:hover,
+#periodCarousel2 .card-text.is-scrolling::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Section background styling for 1945-1969 period */
+#section_5b {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background image layer */
+#section_5b::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+}
+
+/* Fade effect during transition */
+#section_5b.bg-transitioning::before {
+  opacity: 0;
+}
+
+/* Color overlay layer */
+#section_5b::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  z-index: 1;
+  transition: background-color 0.6s ease-in-out;
+}
+
+#section_5b .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Default background for first slide */
+#section_5b::before {
+  background-image: url("../images/4569_image1.jpg");
+}
+
+#section_5b::after {
+  background-color: #5c4129;
+}
+
+/* Background classes for each carousel item */
+#section_5b.bg-slide-0::before {
+  background-image: url("../images/4569_image1.jpg");
+}
+
+#section_5b.bg-slide-0::after {
+  background-color: #5c4129;
+}
+
+#section_5b.bg-slide-1::before {
+  background-image: url("../images/4569_image2.jpg");
+}
+
+#section_5b.bg-slide-1::after {
+  background-color: #7f5d3f;
+}
+
+#section_5b.bg-slide-2::before {
+  background-image: url("../images/4569_image3.jpg");
+}
+
+#section_5b.bg-slide-2::after {
+  background-color: #406c90;
+}
+
+#section_5b.bg-slide-3::before {
+  background-image: url("../images/4569_image4.jpg");
+}
+
+#section_5b.bg-slide-3::after {
+  background-color: #727630;
+}
+
+#section_5b.bg-slide-4::before {
+  background-image: url("../images/4569_image5.jpg");
+}
+
+#section_5b.bg-slide-4::after {
+  background-color: #405b72;
+}
+
+/* Make text white for readability on section background */
+#section_5b h2 {
+  color: white !important;
+}
+
+#periodCarousel2 .card-body * {
+  color: white !important;
+}
+
+/* Di chuc section with background image */
+.dichuc-section {
+  width: 100%;
+  height: calc(100vh - 80px); /* 100vh minus approximate header height */
+  background-image: url("../images/dichuc_bg.png");
+  background-size: cover;
+  background-position: bottom center; /* Crop from top if overflow */
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.dichuc-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: calc(100vh - 200px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.dichuc-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom right;
+}
+
+.dichuc-text {
+  position: absolute;
+  top: 35px;
+  right: 125px;
+  width: 53%;
+  font-family: "ChocolateClassicalSans-Regular", sans-serif;
+  font-size: 1.25rem; /* Same as .lead class */
+  line-height: 1.8;
+  color: white;
+  text-align: justify;
+  z-index: 2;
+}
+
+.dichuc-text p {
+  margin: 0;
+  font-family: "ChocolateClassicalSans-Regular", sans-serif !important;
+  font-size: 1.25rem !important; /* Same as .lead class */
+  color: white !important;
+}
+
+/* Tong ket section with background image */
+.tongket-section {
+  width: 100%;
+  height: calc(100vh - 80px); /* 100vh minus approximate header height */
+  background-image: url("../images/tongket_bg.png");
+  background-size: cover;
+  background-position: bottom center; /* Crop from top if overflow */
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.tongket-container {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 53%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.tongket-text {
+  width: 100%;
+  font-family: "ChocolateClassicalSans-Regular", sans-serif;
+  font-size: 1.25rem; /* Same as .lead class */
+  line-height: 1.8;
+  color: white;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.33);
+  border-radius: 15px;
+  padding: 35px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.tongket-text p {
+  margin: 0;
+  font-family: "ChocolateClassicalSans-Regular", sans-serif !important;
+  font-size: 1.25rem !important; /* Same as .lead class */
+  color: white !important;
+}
